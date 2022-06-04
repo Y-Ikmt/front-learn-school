@@ -24,12 +24,13 @@ export const App: FC = () => {
     //newMemos.push(text);
     //setMemos(newMemos);
 
-    if(text){
+    if(!memos.includes(text)){
       //カスタムフックから呼び出し
       addTodo(text);
-
       //テキストボックスを空にする
       setText("");
+    }else{
+      alert("stateのキーをメモ内容代わりにしているので、\nすでに存在している内容を追加するとバグるので追加できません。")
     }
   };
 
