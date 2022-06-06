@@ -25,8 +25,8 @@ export const TopComponents: React.FC<Props> = (props) => {
         <SDiv>
             <STitle src={title}/>
             <SP>Self-revealing desire</SP>
+            <SImg src={me}/>
             <SButton onClick={clickEnterButton}>Enter</SButton>
-            <SImg src={me} alt="logo"/>
         </SDiv>
     );
 };
@@ -34,46 +34,35 @@ const SDiv = styled.div`
     position: relative;
     width: 100%;
     height: 85vh;
-    min-width:1300px;
+`;
+
+const STitle = styled.img`
+    width: 800px;
+    max-width:80%;
+    margin-top: 20px;
 `;
 
 const SImg = styled.img`
     position: absolute;
     right:0;
     bottom:0;
-    height: 100%;
-`;
-
-const STitle = styled.img`
-    position: absolute;
-    width: 687px;
-    top: 150px;
-    left: 100px;
+    height: 80%;
 `;
 
 const SP = styled.p`
-    position: absolute;
-    width: 687px;
-    height: 40px;
-    left: 100px;
-    top: 400px;
     font-family: 'Orbitron', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
-    text-align:left;
     color: #000000;
+    font-size:min(5.3vw,50px);
+    margin:10px 0;
+    margin-bottom:50px;
 `;
 
 const SButton = styled.a`
-    position: absolute;
-    height: 40px;
-    left: 100px;
-    top: 520px;
     font-family: 'Orbitron', sans-serif;
     background: #D9D9D9;
-    font-size: 32px;
+    font-size: min(5.3vw,50px);
     padding:10px 40px;
     border-radius: 10px;
     text-decoration: none;

@@ -3,6 +3,7 @@ import './App.css';
 import { HeaderComponents } from './components/headerComponent';
 import { TopComponents } from './components/topComponents';
 import { MenuComponents } from './components/menuComponent';
+import { InfoComponents } from './components/infoComponent';
 import { FooterComponents } from './components/footerComponent';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { useState } from "react";
@@ -29,8 +30,12 @@ function App() {
             <TopComponents parentMethod={shoutParent}/>
           </Route>
           <Route path="/menu">
-            <MenuComponents/>
+            <MenuComponents parentMethod={shoutParent}/>
           </Route>
+          <Route path="/info">
+            <InfoComponents  parentMethod={shoutParent}/>
+          </Route>
+
         </Switch>
       </BrowserRouter>
 

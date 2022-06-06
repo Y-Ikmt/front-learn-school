@@ -33,10 +33,9 @@ const SHeader = styled.header`
 `;
 
 const SImg = styled.img`
-    position:absolute;
+    margin-top:5px;
+    margin-left:10px;
     float: left;
-    top: 5%;
-    left:10px;
     transition: all .4s;
     &:hover {
         cursor: pointer;

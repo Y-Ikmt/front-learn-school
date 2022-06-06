@@ -1,4 +1,7 @@
 div{
     background-color: rgb(73, 73, 73);
     border-radius: 10px;
+    margin-bottom: 0ch;
+    border-style: dotted;
+    text-align: left;
 }
